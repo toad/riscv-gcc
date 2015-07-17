@@ -3,7 +3,7 @@
 /* Build the no-tag-copying version of memmove */
 
 #define MEMMOVE __memmove_no_tags
-#include "string/memmove-impl.c"
+#include "string/memmove-impl.h"
 #include "tag.h"
 
 /* Nonzero if either X or Y is not aligned on a "long" boundary.  */
@@ -80,7 +80,6 @@ void* __memmove_g (void *dest, const void *src, size_t len) {
   return dest;
 }
 
-libc_hidden_def(__memmove_g)
 strong_alias (__memmove_g, memmove)
 libc_hidden_builtin_def (memmove)
 

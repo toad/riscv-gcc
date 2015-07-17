@@ -26,4 +26,4 @@
 #define	a2		dest
 #define	a2const
 
-#include <memmove-impl.c>
+#include "memmove-impl.h"

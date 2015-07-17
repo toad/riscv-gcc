@@ -110,6 +110,3 @@ MEMMOVE (a1, a2, len)
 
   RETURN (dest);
 }
-#ifndef memmove
-libc_hidden_builtin_def (memmove)
-#endif
